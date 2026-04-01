@@ -67,14 +67,14 @@ class PostController extends Controller
      * ACARA 13: EDIT DATA
      * Step 1: Menampilkan form edit dengan data yang akan diedit
      */
-    public function edit(string $id)
-    {
-        // Ambil data berdasarkan ID
-        $post = Post::findOrFail($id);
+    // public function edit($id)
+    // {
+    //     // Ambil data berdasarkan ID
+    //     $post = Post::findOrFail($id);
         
-        // Kirim data ke view edit
-        return view('posts.edit', compact('post'));
-    }
+    //     // Kirim data ke view edit
+    //     return view('posts.edit', compact('post'));
+    // }
 
     /**
      * Update the specified resource in storage.

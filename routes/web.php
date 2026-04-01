@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TutorialController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,7 @@ Route::get('/', function () {
 // Resource Route untuk Posts (CRUD lengkap)
 // Otomatis membuat route: index, create, store, show, edit, update, destroy
 Route::resource('posts', PostController::class);
+Route::resource('task', TaskController::class);
 
 /*
 |--------------------------------------------------------------------------

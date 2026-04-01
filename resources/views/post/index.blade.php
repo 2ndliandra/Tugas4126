@@ -229,7 +229,7 @@
                             <td>
                                 <div class="actions">
                                     <a href="{{ route('posts.show', $post->id) }}" class="action-btn btn-view">View</a>
-                                    <a href="{{ route('posts.edit', $post->id) }}" class="action-btn btn-edit">Edit</a>
+                                    <a href="{{url('/task/{$task->id}/edit')}}" class="action-btn btn-edit">Edit</a>
                                     <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
